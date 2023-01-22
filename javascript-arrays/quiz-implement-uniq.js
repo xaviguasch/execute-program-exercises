@@ -3,7 +3,16 @@
 // Write a function uniq(arr). It should return a new array without any duplicate values. It should not change the original array.
 
 function uniq(arr) {
-  return arr
+  const newArr = []
+
+  arr.forEach((el) => {
+    if (newArr.includes(el)) {
+      return
+    } else {
+      newArr.push(el)
+    }
+  })
+  return newArr
 }
 
 console.log(uniq([1, 2, 3]))
