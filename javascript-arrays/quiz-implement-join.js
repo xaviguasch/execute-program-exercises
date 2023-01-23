@@ -3,7 +3,11 @@
 // Using reduce, write a function that behaves like join. Joining [] should produce ''
 
 const join = (arr, separator) => {
-  return
+  if (arr.length === 0) return ''
+
+  return arr.reduce((acc, currV) => {
+    return acc + separator + currV
+  })
 }
 
 console.log(join(['a'], ',')) // 'a'
