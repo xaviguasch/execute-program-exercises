@@ -12,6 +12,9 @@ const allTrue = (values) => {
 
     return currV
   }, 0)
+
+  // ALTERNATIVE, ALSO OFFICIAL SOLUTION
+  // return values.reduce((acc, x) => acc & x, true)
 }
 
 console.log(allTrue([true])) // true
