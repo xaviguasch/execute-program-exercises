@@ -5,7 +5,13 @@
 // (Mind the difference between JavaScript's == and ===.)
 
 const allTrue = (values) => {
-  return
+  if (values.length === 0) return true
+
+  return values.reduce((acc, currV) => {
+    if (acc === false) return false
+
+    return currV
+  }, 0)
 }
 
 console.log(allTrue([true])) // true
