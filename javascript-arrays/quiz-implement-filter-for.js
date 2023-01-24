@@ -3,7 +3,15 @@
 // Use forEach to write a function that behaves like filter.
 
 const filter = (arr, callback) => {
-  return
+  const filteredArr = []
+
+  arr.forEach((el) => {
+    if (callback(el)) {
+      filteredArr.push(el)
+    }
+  })
+
+  return filteredArr
 }
 
 console.log(filter([1, 2, 3], (num) => num >= 0)) // [1,2,3]
