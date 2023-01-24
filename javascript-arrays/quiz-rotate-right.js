@@ -5,7 +5,10 @@
 // Keep in mind that arrays can be empty (with a .length of 0), which you'll need to handle as a special case. When an array is empty, your rotate function should return an empty array.
 
 const rotate = (arr) => {
-  return
+  if (arr.length === 0) return arr
+  const lastEl = arr.pop()
+  arr.unshift(lastEl)
+  return arr
 }
 
 console.log(rotate([1, 1, 1])) // [1,1,1]
