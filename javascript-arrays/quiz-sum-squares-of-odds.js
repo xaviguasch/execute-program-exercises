@@ -5,7 +5,10 @@
 // A hint: x is odd if x % 2 === 1.
 
 const sumSquaresOfOdds = (arr) => {
-  return
+  const oddsArr = arr.filter((num) => num % 2 !== 0)
+  const squaredArr = oddsArr.map((num) => num * num)
+
+  return squaredArr.reduce((acc, currV) => acc + currV, 0)
 }
 
 console.log(sumSquaresOfOdds([0, 0])) // 0
