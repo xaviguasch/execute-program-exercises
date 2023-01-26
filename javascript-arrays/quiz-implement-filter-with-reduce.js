@@ -8,7 +8,13 @@
 // Remember to pass an initial value of [] as reduce's second argument.
 
 const filter = (arr, callback) => {
-  return
+  return arr.reduce((acc, currV) => {
+    if (callback(currV)) {
+      return acc.concat(currV)
+    } else {
+      return acc
+    }
+  }, [])
 }
 
 console.log(filter([1, 2, 3], (num) => num >= 0)) // [1,2,3]
