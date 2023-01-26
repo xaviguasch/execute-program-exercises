@@ -7,7 +7,7 @@
 // x % 2 === 0 means that a number is even.
 
 const even = (arr) => {
-  return [2, 4]
+  return arr.filter((num) => num % 2 === 0)
 }
 
 console.log(even([1, 2, 3, 4])) // [2,4]
