@@ -5,7 +5,7 @@
 // Watch out for the difference between == and ===. == is "double equals", a loose comparison. === is "triple equals", a strict comparison.
 
 const compact = (arr) => {
-  return
+  return arr.filter((el) => el !== null)
 }
 
 console.log(compact([null])) // []
