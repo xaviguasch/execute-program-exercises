@@ -5,7 +5,7 @@
 // (Note: We call your sortByLength function on the array, but we don't use your function's return value. Instead, your function should modify the array in-place. That's what JavaScript's array sort function does, so you don't need to do anything special! But if you copy the array with a method like slice, sort the copy, and then return the sorted copy, that won't work.)
 
 const sortByLength = (words) => {
-  return
+  return words.sort((a, b) => a.length - b.length)
 }
 
 console.log(sortByLength([])) // []
