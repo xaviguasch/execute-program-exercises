@@ -3,7 +3,12 @@
 // Use findIndex to write the function find(arr, callback). It should return the first element where callback(element) is true. If the element is not found, it should return undefined.
 
 const find = (arr, callback) => {
-  return
+  const index = arr.findIndex(callback)
+
+  // to avoid negative index edge case
+  if (index === -1) return undefined
+
+  return arr[index]
 }
 
 console.log(find([1, 2, 3], (n) => n === 1)) // 1
