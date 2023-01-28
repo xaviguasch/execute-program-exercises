@@ -3,7 +3,15 @@
 // Write the function reverse using reduceRight. A hint: use concat in your reduce callback function.
 
 const reverse = (arr) => {
-  return
+  // const newArr = []
+  // arr.reduceRight((acc, currV) => newArr.push(currV), 0)
+
+  // return newArr
+
+  // MORE OPTIMAL SOLUTION
+  return arr.reduceRight((acc, currV) => {
+    return acc.concat(currV)
+  }, [])
 }
 
 console.log(reverse([1])) // 1
