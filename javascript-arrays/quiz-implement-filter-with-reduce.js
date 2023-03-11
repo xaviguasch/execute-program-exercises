@@ -18,7 +18,7 @@ const filter = (arr, callback) => {
 }
 
 console.log(filter([1, 2, 3], (num) => num >= 0)) // [1,2,3]
-console.log(filter([1, 2, 3], (num) => num > 1)) // [2,3]
-console.log(filter([1, 2, 3], (num) => num > 5)) // []
-console.log(filter([null, undefined], (num) => true)) // [null, undefined]
-console.log(filter([], (num) => true)) // []
+// console.log(filter([1, 2, 3], (num) => num > 1)) // [2,3]
+// console.log(filter([1, 2, 3], (num) => num > 5)) // []
+// console.log(filter([null, undefined], (num) => true)) // [null, undefined]
+// console.log(filter([], (num) => true)) // []
