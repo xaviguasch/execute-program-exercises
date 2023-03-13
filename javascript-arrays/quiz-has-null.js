@@ -5,9 +5,9 @@
 // A hint: null == undefined (this is a "double equals" comparison). But null !== undefined (this is a "triple equals" comparison).
 
 const hasNull = (arr) => {
-  return
+  return arr.some((el) => el === null)
 }
 
 console.log(hasNull([null, null]))
-console.log(hhasNull([1, null, 3]))
+console.log(hasNull([1, null, 3]))
 console.log(hasNull([1, 2, 3]))
