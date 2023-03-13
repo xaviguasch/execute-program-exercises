@@ -3,7 +3,10 @@
 // Write a function none(arr, callback). It should return true if the callback returns false for every element.
 
 const none = (arr, callback) => {
-  return
+  // it's the same
+  // return !arr.some((el) => callback(el))
+
+  return !arr.some(callback)
 }
 
 console.log(none([1, 2, 4], (n) => n === 3))
