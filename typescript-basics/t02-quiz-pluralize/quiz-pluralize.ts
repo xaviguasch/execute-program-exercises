@@ -6,6 +6,7 @@ function pluralize(word: string): string {
   return word + 's'
 }
 
-// console.log(pluralize('cat'))
-// console.log(pluralize('dog'))
-// console.log(pluralize(5))
+console.log(pluralize('cat'))
+console.log(pluralize('dog'))
+console.log(pluralize(5))
+console.log(pluralize(null))

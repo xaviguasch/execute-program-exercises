@@ -2,6 +2,8 @@
   "exclude": ["**/*.js"],
 
   "compilerOptions": {
-    "strictNullChecks": true /* Enable strict null checks. */
+    "strictNullChecks": true /* Enable strict null checks. */,
+    // "alwaysStrict": true /* Parse in strict mode and emit "use strict" for each source file. */
+    "strict": true
   }
 }
