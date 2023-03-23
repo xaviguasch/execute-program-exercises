@@ -5,6 +5,5 @@ function addOrSubtract(n, add) {
     return add ? n + 1 : n - 1;
 }
 console.log(addOrSubtract(5, true));
-console.log(addOrSubtract(5, null));
 // console.log(addOrSubtract('5', true))
 // console.log(addOrSubtract('5', null))
