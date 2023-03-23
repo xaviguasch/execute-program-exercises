@@ -1,3 +1,7 @@
 {
-  "exclude": ["**/*.js"]
+  "exclude": ["**/*.js"],
+
+  "compilerOptions": {
+    "strictNullChecks": true /* Enable strict null checks. */
+  }
 }
