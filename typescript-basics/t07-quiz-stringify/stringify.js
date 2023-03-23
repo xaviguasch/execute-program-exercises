@@ -8,4 +8,4 @@ console.log(stringify('hello'));
 console.log(stringify(5));
 console.log(stringify(false));
 console.log(stringify(null));
-// console.log(stringify({ email: 'a@example.com' }))
+console.log(stringify({ email: 'a@example.com' }));
