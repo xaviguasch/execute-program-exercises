@@ -2,8 +2,8 @@
 // This quiz includes topics from these lessons: "Functions", "Object narrowing". If you find this quiz difficult, revisiting those lessons may help!
 // Write a function that returns the name of an object. It should work for any object with a name: string property.
 
-function getName() {
-  return
+function getName({ name }: { name: string }): string {
+  return name
 }
 
 const amir = { name: 'Amir', admin: true }
