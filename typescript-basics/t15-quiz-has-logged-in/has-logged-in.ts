@@ -12,6 +12,11 @@ function hasLoggedIn<T>(action: true | number): boolean {
   }
 }
 
+// alternative solution
+// function hasLoggedIn(times: number | true) {
+//   return (typeof times === 'boolean') ? true : times > 0;
+// }
+
 console.log(hasLoggedIn(true))
 console.log(hasLoggedIn(0))
 console.log(hasLoggedIn(1))
