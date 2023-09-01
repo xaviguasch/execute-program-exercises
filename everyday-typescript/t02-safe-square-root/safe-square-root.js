@@ -6,7 +6,7 @@
 // (Note: you can use Number.isNaN(n) if you want to check for whether a number is NaN.)
 // >
 function safeSqrt(n) {
-    if (n < 0 || Number.isNaN(n)) {
+    if (n < 0 || isNaN(n)) {
         return { kind: 'failure' };
     }
     else {

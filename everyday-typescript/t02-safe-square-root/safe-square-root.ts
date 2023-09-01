@@ -10,7 +10,7 @@
 // >
 
 function safeSqrt(n: number) {
-  if (n < 0 || Number.isNaN(n)) {
+  if (n < 0 || isNaN(n)) {
     return { kind: 'failure' }
   } else {
     return { kind: 'success', value: Math.sqrt(n) }
