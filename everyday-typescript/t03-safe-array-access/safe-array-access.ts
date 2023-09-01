@@ -21,3 +21,15 @@ function elemAt<T>(arr: T[], idx: number) {
 console.log(elemAt([0, 0, 0], 0))
 console.log(elemAt([1, 2, 3], 1))
 console.log(elemAt(['a', 'b', 'c'], 2))
+
+// OFFICIAL SOLUTION
+
+// function elemAt<T>(arr: T[], i: number) {
+//   if (arr.length === 0) {
+//     return {kind: 'failure', reason: 'array is empty'};
+//   }
+//   if (i < 0 || i >= arr.length) {
+//     return {kind: 'failure', reason: 'no element at that index'};
+//   }
+//   return {kind: 'success', value: arr[i]};
+// }
