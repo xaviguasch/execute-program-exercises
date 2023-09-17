@@ -6,8 +6,11 @@
 
 // (If a function returns nothing, but also modifies nothing, then it does nothing at all! It must return something, modify something, or both. By returning undefined, we tell callers of our function that it modifies something.)
 
-function setSecondElementToZero(nums) {}
+function setSecondElementToZero(nums) {
+  nums[1] = 0
+  return undefined
+}
 
-const array = [0, 0, 0]
-
+const array = [1, 2, 3]
 console.log(setSecondElementToZero(array))
+console.log(array)
