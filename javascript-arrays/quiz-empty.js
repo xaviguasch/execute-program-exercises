@@ -3,7 +3,7 @@
 // Write a function isEmpty(arr) that returns true if the array is empty.
 
 function isEmpty(arr) {
-  return true
+  return arr.length === 0
 }
 
 console.log(isEmpty([]))
