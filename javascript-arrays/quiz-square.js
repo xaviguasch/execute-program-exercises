@@ -3,7 +3,7 @@
 // Use .map to write a function that squares every number in an array.
 
 function square(nums) {
-  return nums
+  return nums.map((n) => n * n)
 }
 
 console.log(square([0, 0, 0]))
