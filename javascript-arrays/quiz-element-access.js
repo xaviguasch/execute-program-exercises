@@ -5,7 +5,12 @@
 // One way to do this is to compare the requested index against 0 and the array's length.
 
 function at(arr, i) {
-  return arr[i]
+  // Is this index actually in the array?
+  if (i < 0 || i >= arr.length) {
+    return null
+  } else {
+    return arr[i]
+  }
 }
 
 console.log(at([0, 0, 0], 0))
