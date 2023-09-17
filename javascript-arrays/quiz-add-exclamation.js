@@ -3,7 +3,7 @@
 // Use .map to write a function that appends a '!' to every element.
 
 function excite(strings) {
-  return strings
+  return strings.map((c) => c + '!')
 }
 
 console.log(excite(['a', 'b', 'c']))
