@@ -5,7 +5,7 @@
 // Don't worry about negative n.
 
 function takeFirst(arr, n) {
-  return []
+  return arr.slice(0, n)
 }
 
 console.log(takeFirst([1, 2, 3], 0))
