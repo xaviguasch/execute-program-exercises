@@ -3,8 +3,8 @@
 // Write a function copyArray that returns a copy of an array. Changes to the copy shouldn't affect the original array and vice-versa.
 
 function copyArray(array) {
-  return array
+  return array.slice()
 }
 
 console.log(copyArray(['a', 'b']))
-console.log(copyArray(['a', 'b']))
+console.log(copyArray([null, undefined, false]))
