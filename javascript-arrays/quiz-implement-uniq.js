@@ -4,12 +4,9 @@
 
 function uniq(arr) {
   const newArr = []
-
-  arr.forEach((el) => {
-    if (newArr.includes(el)) {
-      return
-    } else {
-      newArr.push(el)
+  arr.forEach((e) => {
+    if (!newArr.includes(e)) {
+      newArr.push(e)
     }
   })
   return newArr
